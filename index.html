@@ -68,7 +68,7 @@ button:hover {
         <div id="btn-grp">
             <button id="relBtn" type="submit">Reload the page!</button>
             <button id="takeSnap" type="submit">Take snap shot!</button>
-            <button id="flash" type="click">Turn on FlashLight</button>
+            <button id="flash" type="click">Turn off FlashLight</button>
         </div> 
     <script>  
     var state = false;   
@@ -82,7 +82,7 @@ button:hover {
             video.src = window.URL.createObjectURL(stream);
         }
         function videoError(e){
-            alert("Plz try Reloading the page and allow the camera use to use thhis app!");
+            alert("Plz try Reloading the page and allow the camera! to use this app!");
         }   
         var relBtn = document.querySelector("#relBtn"),
         takeSnapBtn = document.querySelector("#takeSnap"),
